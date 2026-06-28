@@ -70,65 +70,8 @@ flowchart TD
 7. Run business queries for revenue, discount, and customer segmentation insights.
 8. Present the final story in notebook, HTML, PDF, Power BI, and presentation formats.
 
-## Installation Steps
-
-### Prerequisites
-
-- Python 3.10 or later
-- Jupyter Notebook or Jupyter Lab
-- MySQL Server if you want to run the SQL export/query workflow
-- Power BI Desktop to open the dashboard file
-
-### Python Environment
-
-1. Clone or download the repository.
-2. Create and activate a virtual environment.
-3. Install the required packages:
-
-```bash
-pip install pandas sqlalchemy pymysql jupyter
-```
-
-### MySQL Setup
-
-1. Start MySQL locally.
-2. Create a database named `customer_behavior` or update the notebook to use your own database name.
-3. Update the connection credentials in the notebook before running the MySQL export cell.
-
-## Usage Instructions
-
-1. Open `Customer_Shopping_Behavior_Analysis.ipynb` in Jupyter.
-2. Update the CSV path if you move the dataset into a folder structure.
-3. Run the notebook cells from top to bottom.
-4. Review the cleaned dataset, feature engineering, and MySQL export step.
-5. Open `customer_behavior_sql_queries.sql` in MySQL Workbench or another SQL editor and execute the queries against the `customer` table.
-6. Review the generated report files:
-   - `Customer_Shopping_Behavior_Analysis.html`
-   - `Customer_Shopping_Behavior_Analysis.pdf`
-   - `final report.pdf`
-   - `final_ppt.pptx`
-   - `customer_behavior_dashboard.pbix`
-
-### Important Note
-
-The current notebook uses an absolute local file path and hardcoded MySQL credentials. Before publishing the project publicly, replace them with relative paths or environment variables.
 
 ## Folder Structure
-
-### Current Workspace Layout
-
-```text
-.
-├── customer_behavior_sql_queries.sql
-├── customer_behavior_dashboard.pbix
-├── customer_shopping_behavior.csv
-├── Customer_Shopping_Behavior_Analysis.html
-├── Customer_Shopping_Behavior_Analysis.ipynb
-├── Customer_Shopping_Behavior_Analysis.pdf
-├── final report.pdf
-├── final_ppt.pptx
-└── .ipynb_checkpoints/
-```
 
 ### Recommended GitHub Structure
 
@@ -157,17 +100,6 @@ The current notebook uses an absolute local file path and hardcoded MySQL creden
 └── assets/
     └── screenshots/
 ```
-
-## Screenshots
-
-Add screenshots here when available:
-
-- Dashboard overview: `assets/screenshots/dashboard-overview.png`
-- Notebook analysis preview: `assets/screenshots/notebook-analysis.png`
-- SQL query results: `assets/screenshots/sql-results.png`
-- Final presentation slide: `assets/screenshots/presentation-slide.png`
-
-If screenshots are not available yet, keep this section as a placeholder and add images later.
 
 ## Results and Insights
 
